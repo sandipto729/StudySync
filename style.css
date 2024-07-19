@@ -721,6 +721,7 @@ testimonial-desc{
   display: flex;
   flex-direction: column;
   gap: 1.65rem;
+  
 }
 
 .logo-svg{
@@ -798,14 +799,22 @@ ul{
     margin-top: 3rem;
   }
   .footer{
-
+      text-align: center;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
   }
   .footer-top{
-      padding-left: 10rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+       gap: 1.65rem; 
+      /*padding-left: 10rem; */
   }
   .footer-grid{
+    width: 100%;
       align-self: center;
       justify-content: space-evenly;
   }
@@ -815,12 +824,17 @@ ul{
 }
 
 @media screen and (max-width:850px) {
+  .footer{
+    text-align: center;
+}
   .footer-top{
+    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.65rem;
       padding-left: 1rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
   }
   .footer-grid{
      display: grid;
